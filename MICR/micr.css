@@ -3,7 +3,7 @@ html{
 }
 
 .page-hero__image{
-    background-image: url(/images/movement.png);
+    background-image: url(images/movement.png);
     height: 500px;
     max-width: 1280px;
     margin: 5px auto;

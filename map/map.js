@@ -1,4 +1,4 @@
-// Initialize and add the map
+
 function initMap() {
     var map;
     var bounds = new google.maps.LatLngBounds();
@@ -6,7 +6,7 @@ function initMap() {
         mapTypeId: 'roadmap'
     };
                     
-    // Display a map on the web page
+ 
     map = new google.maps.Map(document.getElementById("map"), mapOptions);
     map.setTilt(50);
 
@@ -19,7 +19,7 @@ function initMap() {
         ['Filiala Călălrași' , 47.249605, 28.313869],
     ];
 
-    //Infowindow content
+   
     var infoWindowContent = [
         ['<img src="/images/chisinau.png">'+
          '<div class="text"><h4><b>Filiala Chișinău</b></h4></div>'+
@@ -49,10 +49,10 @@ function initMap() {
 
     ];
 
-    //multiple markers
+    
     var infoWindow = new google.maps.InfoWindow(), marker, i;
 
-    //place of each marker
+    
     for( i = 0; i < markers.length; i++ ) {
         var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
         bounds.extend(position);
@@ -62,7 +62,7 @@ function initMap() {
             title: markers[i][0]
         });
 
-    //add infowindow to markrs
+    
     google.maps.event.addListener(marker, 'click', (function(marker, i) {
         return function() {
             infoWindow.setContent(infoWindowContent[i][0]);
@@ -70,11 +70,11 @@ function initMap() {
         }
     })(marker, i));
 
-    //center the map to fit all markers
+    
      map.fitBounds(bounds);
     }
 
-    //zoom level
+    
     var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function() {
         this.setZoom(7);
         google.maps.event.removeListener(boundsListener);

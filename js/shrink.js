@@ -65,8 +65,8 @@ function myFunction(x) {
   }
   
   var x = window.matchMedia("(min-width: 1201px)")
-  myFunction(x) // Call listener function at run time
-  x.addListener(myFunction) // Attach listener function on state changes
+  myFunction(x) 
+  x.addListener(myFunction) 
 
   function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
