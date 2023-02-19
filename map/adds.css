@@ -1,0 +1,132 @@
+html{
+    font-family: "Montserrat","Noto Kufi Arabic","Arial",sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.row.page-hero__row{
+    margin-top: -60px;
+}
+
+.col-md-12{
+    height: 100px;
+    padding: 7px 32px;
+    background-color:  #3a586d;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+}
+
+.in-text{
+    height: 85px;
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-12{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.col-12__second{
+    font-size: 20px;
+}
+p{
+    line-height: 1.2;
+    letter-spacing: normal;    
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+
+.specific{
+    margin-block-start: 2em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+strong{
+    font-weight: bolder;
+}
+
+.white-bg{
+    background: #ffffff;
+    padding: 40px 0px 40px 0px;
+    
+}
+
+.coconut-bg{
+    background: #F0EDE5;
+    padding: 1px 0px 1px 0px;
+}
+
+.container.container-heading__1{
+    margin-top: -20px;  
+}
+
+.container.container-heading__2{
+    margin-top: -60px; 
+}
+
+h2.heading-title{
+    position: relative;
+}
+
+.heading-title{
+    background-color: #3a586d;
+    color: #ffffff;
+    width: fit-content;
+    display: inline;
+    box-shadow: 10px 0 0 #3a586d, -10px 0 0 #3a586d;
+    line-height: 2.6rem;
+    font-size: 35px;
+}
+
+.content{
+    padding: 0;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 2em;
+    margin-block-end: 4em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+ .content > li{
+    display: list-item;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.map-position{
+    display: block;
+    margin-block-start: 3em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;  
+}
+
+@media (max-width: 630px){
+    .row.page-hero__row{
+        margin-top: -30px;
+    }
+
+    .content > li{
+        padding-inline-start: 0px;
+    }
+}

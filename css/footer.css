@@ -1,0 +1,84 @@
+footer{
+    position: absolute;
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    margin-top: 50px;
+    padding-top: 5px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 3px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.map {
+    width: 360px;
+}
+  
+.map-pin {
+  position: relative;
+  z-index: 1;
+  top: 107px;
+  left: 110px;
+  width: 80px;
+  height: 83px; 
+}
+  
+  .map-link{
+  display: block;
+  position: relative;
+  top: -55px;
+  height: 290px;
+  background: url(/images/moldova.png) no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+
+.map-button {
+  position: absolute;
+  top: 120px;
+  left: 150px;
+  filter: drop-shadow(0 1px 1px #3d3d3d);
+  white-space: nowrap;
+  background: #fff;
+  color: #ee3224;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 4px 20px;
+  display: inline-block;
+  transition-duration: 0.4s;
+}
+
+.map-link:hover .map-button{
+  display:block;
+  background:#ee3224;
+  color:#fff
+}

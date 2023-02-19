@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text{
+    font-family: "Montserrat","Noto Kufi Arabic","Arial",sans-serif;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #010c1f;
+    line-height: 5rem;
+}
+
+.slider{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+.slider .carousel {
+    white-space: nowrap;
+    font-size: 0px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+
+}
+
+.carousel img{
+    width: auto;
+    height: 315px;
+    object-fit: cover;
+    margin-left: 5px;
+    width: calc(100% / 3);
+    transition: 0.5s;
+
+}
+
+.slider i{
+position: absolute;
+height: 46px;
+text-align: center;
+cursor: pointer;
+line-height: 46px;
+font-size: 23px;
+transition: 0.6s ease;
+padding: 16px;
+color: black;
+
+user-select: none;
+}
+
+.slider i:first-child{
+left: 1px;
+margin-top: 115px;
+border-radius: 3px 3px 3px 3px;
+box-sizing: initial;
+}
+.slider i:last-child{
+right: 0px;
+margin-top: -200px;
+border-radius: 3px 3px 3px 3px;
+box-sizing: initial;
+}
+
+.slider i:hover{
+    background-color: rgba(0,0,0,0.8);
+    color: blanchedalmond;
+}
+#myimg{
+    transition: 0.5s;
+    cursor: pointer;  
+}
+ #myimg:hover {
+    opacity: 0.5;
+
+}
+
+.slider .popup{
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0,0,0,0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.slider .popup span{
+    position: absolute;
+    top: 5px; right: 25px;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+    color: #f1f1f1;
+    z-index: 100;
+}
+
+.slider .popup img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    width: 750px;
+    height: 500px;
+    object-fit: cover;
+}
+
+@media(max-width:1330px){
+    .carousel img{
+        width: 315px;
+        width: calc(100% / 2);
+        margin-left: 6px;
+    }
+
+    .slider i{
+        background: #fff;
+        color: black;
+        padding: initial;
+    }
+
+    .slider i:hover{
+       background-color: #fff;
+       color: black;
+    }
+
+    #myimg:hover {
+     opacity: initial;
+    }
+
+    .slider i:first-child{
+        left: 9px;
+        border-radius: 0px 3px 3px 0px;
+        padding: 10px;
+        }
+
+    .slider i:last-child{
+        right: 9px;
+        border-radius: 3px 0px 0px 3px;
+        padding: 10px;
+    }
+}
+
+@media (max-width:768px){
+    .slider .popup img{
+        width: 95%;
+    }
+
+}
+
+@media(max-width:700px){
+    .carousel img{
+        width: calc(100%);
+        margin-left: 7.5px;
+    }
+
+    .slider .popup img{
+        height: 50%;
+    }
+}
+
+@media(min-width:2000px){
+    .slider{
+        max-width: 2200px;
+    }
+    
+    .carousel img{
+        height: 415px;
+    }
+
+    .slider i:first-child{
+        margin-top: 155px;
+    }
+
+    .slider i:last-child{
+        margin-top: -245px;
+    }
+
+    .slider .popup img {
+        width: 1300px;
+        height: 750px;
+    }
+}

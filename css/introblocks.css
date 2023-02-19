@@ -1,0 +1,264 @@
+*{
+    box-sizing: inherit;
+}
+
+div{
+    display: block;
+}
+
+.block{
+    height: 280px;
+}
+
+.row .in-block{
+    display: flex;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+}
+
+.block-container{
+    width: 50%;
+    float: left;
+}
+
+.text-block{
+    font-family: "Open Sans","Noto Kufi Arabic","Arial",sans-serif;
+    font-size: 0.8889rem;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.row a{
+    background-color: #010c1fea;
+    height: 250px;
+}
+
+.block-container .block-1 .outer{
+    float: right;
+}
+
+.outer1{
+    max-width: 500px;
+    margin: 50px;
+    z-index: 66;
+}
+
+.outer1::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 18px solid transparent;
+    border-left-color: #010c1fea;
+    border-right: 0;
+    margin-top: 100px;
+    margin-right: -18px; 
+    z-index: 1;
+}
+
+.outer2{
+    max-width: 500px;
+    margin: 50px;
+}
+
+p{
+    line-height: 1.2;
+    letter-spacing: normal;
+    font-size: 18px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.block-2{
+    width: 50%;
+    position: relative;
+    background-color: #ebebeb;
+    margin-block-start: 0em;
+    margin-block-end: 3em;
+    height: 250px;
+}
+
+.block-container .block-2 .outer{
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translate(0%,-50%);
+}
+
+.filiale{
+    height: 130px;
+    width: 50%;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-bottom: 30px;
+}
+
+.filiale .number{
+    float: left;
+    font-size: 30px;
+    margin: 45px 20px 20px 145px;
+    color: #010c1f;
+}
+
+.volunteers{
+    height: 130px;
+    width: 50%;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 30px;
+}
+
+.volunteers .number{
+    float: right;
+    font-size: 27px;
+    margin: 33px 30px 0px 100px;
+    color: #ff1616;
+}
+
+.number{
+    font-family: "Montserrat","Noto Kufi Arabic","Arial",sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    width: 87px;
+    text-align: center;
+}
+
+@media (max-width: 1100px){
+    .block{
+        height: 525px;
+    }
+    
+
+    .block-container{
+        width: 100%;
+    }
+
+    .row a{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .block-2{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .outer1::after{
+        margin-top: 241px;
+        transform: rotate(90deg);
+    }
+}
+
+
+@media (max-width: 570px){
+    .block{
+        height: 570px;
+    }
+
+    .block-2{
+        height: 305px;
+    }
+
+    .row a{
+        height: 320px;
+    }
+
+    .filiale{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .volunteers{
+        width: 100%;
+    }
+
+    .row a{
+        height: 240px;
+      }
+
+    .outer1::after{
+        margin-top: 231px;
+    }
+}
+
+@media (max-width: 560px){
+
+    p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 420px){
+    .block{
+        height: 595px;
+    }
+    
+    .row a{
+        height: 270px;
+    }
+
+    .filiale{
+        margin-left: -50px;
+    }
+
+    .volunteers{
+        margin-left: 40px;
+    }
+
+    .outer1::after{
+        margin-top: 265px;
+        border: 10px solid transparent;
+        border-left-color: #010c1fea;
+        border-right: 0;
+    }
+}
+
+@media (max-width: 350px){
+    .volunteers{
+        margin-left: 0px;
+    }
+
+    .outer1,
+    .outer2{
+        margin: 10px;
+    }
+
+    .filiale{
+        margin-left: -30px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 2000px){
+    .outer1{
+        float: right;
+        margin-top: 20px;
+    }
+}
