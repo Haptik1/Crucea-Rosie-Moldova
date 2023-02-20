@@ -21,29 +21,29 @@ function initMap() {
 
    
     var infoWindowContent = [
-        ['<img src="/images/chisinau.png">'+
+        ['<img src="../images/chisinau.png">'+
          '<div class="text"><h4><b>Filiala Chișinău</b></h4></div>'+
          '<br><div class="description"><div class="sub-text">Adresa:</div> str. Andrei Doga 27, Chișinău</div>'+
          '<br><a class="map-item" href="https://www.facebook.com/profile.php?id=100083381340571"><i class="fa-brands fa-facebook"></i></a>'+
          '<a class="map-item" href="https://www.instagram.com/crucea_rosie_md_chisinau/"><i class="fa-brands fa-instagram"></i></a>'],
-        ['<img src="/images/balti2.png">'+
+        ['<img src="../images/balti2.png">'+
          '<div class="text"><h4><b>Filiala Bălți</b></h4></div>'+
          '<br><div class="description"><div class="sub-text">Număr de telefon:</div> 0794 03 480</div>'+
          '<div class="description"><div class="sub-text">Adresa de e-mail:</div> cristinacrudu@mail.ru</div>'+
          '<br><a class="map-item" href="https://www.facebook.com/redcross.balti/"><i class="fa-brands fa-facebook"></i></a>'],
-        ['<img src="/images/SN.png">'+
+        ['<img src="../images/SN.png">'+
          '<div class="text"><h4><b>Sediul Central</b></h4></div>'+
          '<br><div class="description"><div class="sub-text">Adresa:</div> str. Gheorghe Asachi 67A, Chisinau</div>'+
          '<div class="description"><div class="sub-text">Număr de telefon:</div> 022 729 644</div>'+
          '<br><a class="map-item" href="https://www.facebook.com/redcross.md"><i class="fa-brands fa-facebook"></i></a>'],
-        ['<img src="/images/ungheni.png">'+
+        ['<img src="../images/ungheni.png">'+
          '<div class="text"><h4><b>Filiala Ungheni</b></h4></div>'+
          '<br><div class="description"><div class="sub-text">Adresa:</div> str. Alexandru cel Bun, Ungheni</div>'+
          '<br><a class="map-item" href="https://www.facebook.com/ungheni.redcross/"><i class="fa-brands fa-facebook"></i></a>'],
-        ['<img src="/images/criuleni.png">'+
+        ['<img src="../images/criuleni.png">'+
          '<div class="text"><h4><b>Filiala Criuleni</b></h4></div>'+
          '<br><a class="map-item" href="https://www.facebook.com/redcross.criuleni/about/?ref=page_internal"><i class="fa-brands fa-facebook"></i></a>'],
-        ['<img src="/images/calarasi.png">'+
+        ['<img src="../images/calarasi.png">'+
          '<div class="text"><h4><b>Filiala Călărași</b></h4></div>'+
          '<br><a class="map-item" href="https://www.facebook.com/CruciiRosiiCalarasi"><i class="fa-brands fa-facebook"></i></a>'],
 
