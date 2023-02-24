@@ -1,46 +1,131 @@
-footer{
-    position: absolute;
-    background: #111;
-    height: auto;
-    width: 100%;
-    font-family: "Open Sans";
-    margin-top: 50px;
-    padding-top: 5px;
-    color: #fff;
-}
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.footer-content h3{
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-}
-.footer-content p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.footer-bottom{
-    background: #000;
-    width: 100%;
-    padding: 3px 0;
-    text-align: center;
+footer{
+  position: static;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+  color: #d9d9d9;
 }
-.footer-bottom p{
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: uppercase;
+.main-content{
+  display: flex;
 }
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .footer-content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .footer-content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .footer-content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+.left .footer-content p{
+  text-align: justify;
+}
+.left .footer-content .social{
+  margin: 20px 0 0 0;
+}
+.left .footer-content .social a{
+  padding: 0 2px;
+}
+.left .footer-content .social .f-efect,
+.left .footer-content .social .i-efect,
+.left .footer-content .social .y-efect{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  color: #d9d9d9;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.left .footer-content .social .f-efect:hover{
+  background: #3b5998;
+}
+
+.left .footer-content .social .i-efect:hover{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.left .footer-content .social .y-efect:hover{
+  background: 	#FF0000;
+}
+.right .footer-content .fas{
+  font-size: 1.4rem;
+  background: #1a1a1a;
+  color: #d9d9d9;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  border: 0;
+  cursor: pointer;
+}
+.right .footer-content .fas:hover{
+  background: #f12020;
+}
+
+.right .footer-content .text{
+  text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #d9d9d9;
+    line-height: 5rem;
+}
+.right .footer-content .phone{
+  margin: 15px 0;
+}
+
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+
 
 .map {
-    width: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
   
 .map-pin {
@@ -59,7 +144,7 @@ footer{
   height: 290px;
   background: url(../images/moldova.png) no-repeat;
   background-size: contain;
-  width: 100%;
+  width: 300px;
 }
 
 .map-button {
@@ -81,4 +166,127 @@ footer{
   display:block;
   background:#ee3224;
   color:#fff
+}
+
+.info{
+  display: flex;
+  float: left;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext,
+.tooltip .tooltiptext2{
+  visibility: hidden;
+  width: 190px;
+  background-color: #555;
+  color: #fff;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 91%;
+  left: 1%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after,
+.tooltip .tooltiptext2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext,
+.tooltip:hover .tooltiptext2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 1250px){
+  .map{
+    justify-content: flex-start;
+  }
+  .map-link{
+    width: 240px;
+    top: -15px;
+  }
+  .map-pin{
+    width: 60px;
+    height: 63px;
+    top: 143px;
+  }
+  .map-button{
+    font-size: 16px;
+    left: 140px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .box .footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .main-content .box{
+    margin: 5px 0;
+  }
+
+  .map{
+    justify-content: center;
+  }
+}
+
+@media (max-width: 470px){
+  .map{
+    justify-content: flex-start;
+  }
+
+  .tooltip .tooltiptext{
+    left: 64%;
+  }
+
+  .tooltip .tooltiptext2{
+    left: 46%;
+  }
+
+  .tooltip .tooltiptext::after,
+  .tooltip .tooltiptext2::after{
+    left: 7%;
+  }
+
+  .right .footer-content .text{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 340px){
+  .map-button{
+    top: 200px;
+    left: 50px;
+  }
 }

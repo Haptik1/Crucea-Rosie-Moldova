@@ -25,6 +25,7 @@
     font-size: 0px;
     overflow: hidden;
     scroll-behavior: smooth;
+    height: 375px;
 
 }
 
@@ -60,7 +61,7 @@ box-sizing: initial;
 }
 .slider i:last-child{
 right: 0px;
-margin-top: -200px;
+margin-top: -262px;
 border-radius: 3px 3px 3px 3px;
 box-sizing: initial;
 }
@@ -165,6 +166,10 @@ box-sizing: initial;
 @media(min-width:2000px){
     .slider{
         max-width: 2200px;
+    }
+
+    .slider .carousel{
+        height: 490px;
     }
     
     .carousel img{

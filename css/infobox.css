@@ -49,6 +49,12 @@
   border-bottom: 3px solid #ff5050;
 }
 
+@media (max-width: 1200px){
+  .box-description{
+    text-align: justify;
+  }
+}
+
 @media (max-width: 1156px){
   .read-more{
     margin-top: 60px;
@@ -143,11 +149,11 @@
 
 
   .box-text{
-    padding: 0 45px 0 75px;
+    padding: 0 30px 0 75px;
   }
 
   .box-title{
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .box-description{
@@ -162,6 +168,12 @@
 @media (max-width: 457px){
   .box-description{
     font-size: 10px;
+  }
+}
+
+@media (max-width: 300px){
+  .box-description{
+    font-size: 7px;
   }
 }
 
