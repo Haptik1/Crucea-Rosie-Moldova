@@ -38,8 +38,21 @@ document.querySelectorAll('.carousel img').forEach(image =>{
     }
 });
 
+
+function mySfunction(x) {
+    if (x.matches) { 
 document.querySelector('.popup span').onclick = () =>{
     document.querySelector('.popup').style.display = 'none';
     document.querySelector('#header').style.display = 'block';
     document.querySelector('.hero-image').style.marginTop = '100px';
-}
+}} else{
+    document.querySelector('.popup span').onclick = () =>{
+        document.querySelector('.popup').style.display = 'none';
+        document.querySelector('#header').style.display = 'block';
+        document.querySelector('.hero-image').style.marginTop = '70px';    
+}}}
+
+
+var x = window.matchMedia("(min-width: 1201px)")
+mySfunction(x) 
+x.addListener(mySfunction) 

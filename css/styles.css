@@ -88,7 +88,7 @@ html, body{
 
 .banner-text{
   position: absolute;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: 50%;
   transform: translateX(-50%);
   font-style: normal;
@@ -118,7 +118,7 @@ html, body{
     }
 
     .banner-text{
-      margin-top: 13%;
+      margin-top: 10%;
     }
   }
   
@@ -129,7 +129,6 @@ html, body{
 
     .banner-text{
       width: 80%;
-      margin-top: 15%;
     }
   }
   
@@ -160,7 +159,7 @@ html, body{
     }
 
     .banner-text{
-      margin-top: 20%;
+      margin-top: 15%;
       width: 95%;
     }
   }
@@ -246,7 +245,7 @@ html, body{
     }
 
     .banner-text {
-      margin-top: 50%;
+      margin-top: 30%;
   }
   }
   
